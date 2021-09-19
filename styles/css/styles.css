@@ -1,0 +1,490 @@
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../public/assets/fonts/SPACE MONO/SpaceMono-Regular.ttf");
+}
+/*#region General */
+body {
+  overflow-x: hidden;
+  font-family: IRANSans;
+  background-color: #000;
+  margin: 0;
+  min-height: 100vh;
+  padding: 1rem 0;
+}
+@media (max-width: 769px) {
+  body {
+    padding: 1rem;
+  }
+}
+body * {
+  transition: 0.4s;
+  color: #fff;
+}
+body * ::-webkit-scrollbar {
+  width: 5px !important;
+}
+body *:hover, body *::before, body *::after {
+  transition: 0.4s;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+input, textarea {
+  width: 100%;
+}
+input :focus, textarea :focus {
+  outline: none;
+}
+
+button {
+  border: none;
+  background-color: unset;
+  outline: none !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #787878;
+}
+
+/*#endregion */
+/*#region Header */
+header {
+  height: 4rem;
+  max-width: 90rem;
+  margin: auto;
+  padding: 0 0.5rem;
+  background-color: #000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 769px) {
+  header .items {
+    display: none;
+  }
+}
+header .items ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+header .items ul li {
+  padding: 0 1rem;
+}
+header .items ul li a {
+  display: block;
+  color: #787878;
+  position: relative;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  border-radius: 2rem;
+}
+header .items ul li a.active {
+  color: #fff;
+}
+header .items ul li a:hover {
+  color: #787878;
+}
+header .items ul li a:hover.active {
+  color: #fff;
+}
+header .logo {
+  padding: 0;
+}
+header .logo img {
+  cursor: pointer;
+  width: 2rem;
+  object-fit: contain;
+}
+
+/*#endregion */
+/*#region Home Page */
+section.homePage .homeBanner {
+  position: relative;
+  padding: 2rem 1rem;
+  max-width: 70rem;
+  margin: auto;
+  height: calc(100vh - 9rem);
+}
+@media (max-width: 769px) {
+  section.homePage .homeBanner {
+    padding: 2rem 0 0;
+    height: 100%;
+  }
+}
+section.homePage .homeBanner .name {
+  position: absolute;
+  width: calc(100% - 2rem);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+@media (max-width: 769px) {
+  section.homePage .homeBanner .name {
+    top: auto;
+    left: auto;
+    position: relative;
+    transform: unset;
+    width: 100%;
+  }
+}
+section.homePage .homeBanner .name h1, section.homePage .homeBanner .name input {
+  background-color: #000;
+  border: none;
+  font-size: 8rem;
+  font-weight: bold;
+}
+@media (max-width: 1180px) {
+  section.homePage .homeBanner .name h1, section.homePage .homeBanner .name input {
+    font-size: 6.5rem;
+  }
+}
+@media (max-width: 992px) {
+  section.homePage .homeBanner .name h1, section.homePage .homeBanner .name input {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 769px) {
+  section.homePage .homeBanner .name h1, section.homePage .homeBanner .name input {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 580px) {
+  section.homePage .homeBanner .name h1, section.homePage .homeBanner .name input {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 400px) {
+  section.homePage .homeBanner .name h1, section.homePage .homeBanner .name input {
+    font-size: 2.5rem;
+  }
+}
+section.homePage .homeBanner .name h1 {
+  margin-bottom: -2rem;
+}
+@media (max-width: 769px) {
+  section.homePage .homeBanner .name h1 {
+    margin-bottom: 0;
+  }
+}
+section.homePage .homeBanner .name input {
+  -webkit-background-clip: text;
+  background-image: url("../../public/assets/images/textBackground.jpeg");
+  background-size: cover;
+  -webkit-text-fill-color: transparent;
+}
+section.homePage .homeBanner .about {
+  position: absolute;
+  width: calc(100% - 2rem);
+  bottom: 2rem;
+  text-align: center;
+}
+section.homePage .homeBanner .about h4 {
+  font-size: 1.2rem;
+}
+section.homePage .homeBanner .about h4.desktop {
+  display: none;
+  color: #787878;
+}
+@media (max-width: 769px) {
+  section.homePage .homeBanner .about h4 {
+    margin-top: 1rem;
+    text-align: left;
+    font-size: 1rem;
+  }
+  section.homePage .homeBanner .about h4.desktop {
+    display: block;
+  }
+}
+@media (max-width: 769px) {
+  section.homePage .homeBanner .about {
+    position: relative;
+    bottom: auto;
+  }
+}
+section.homePage .homeSocial {
+  height: 4rem;
+}
+section.homePage .homeSocial h4 {
+  display: none;
+}
+@media (max-width: 769px) {
+  section.homePage .homeSocial {
+    margin-top: 2rem;
+    height: 100%;
+  }
+  section.homePage .homeSocial h4 {
+    display: block;
+  }
+}
+section.homePage .homeSocial ul {
+  max-width: 15rem;
+  margin: auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 769px) {
+  section.homePage .homeSocial ul {
+    display: block;
+  }
+}
+section.homePage .homeSocial ul li {
+  padding: 1rem 0.5rem;
+}
+section.homePage .homeSocial ul li span {
+  display: none;
+}
+section.homePage .homeSocial ul li img {
+  width: 100%;
+  display: block;
+  margin: auto;
+  max-width: 4rem;
+  object-fit: contain;
+}
+section.homePage .homeSocial ul li a:hover img {
+  transform: scale(1.2);
+}
+@media (max-width: 769px) {
+  section.homePage .homeSocial ul li span {
+    color: #787878;
+    display: block;
+  }
+  section.homePage .homeSocial ul li span:hover {
+    color: #fff;
+  }
+  section.homePage .homeSocial ul li img {
+    display: none;
+  }
+}
+
+/*#endregion */
+/*#region Projects Page */
+.projectsPage .projectsBanner {
+  width: calc(100% - 2rem);
+  max-width: 70rem;
+  margin: auto;
+}
+.projectsPage .projectsBanner .content {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.projectsPage .projectsBanner .content .name {
+  padding: 1rem;
+  width: fit-content;
+}
+.projectsPage .projectsBanner .content .name h1 {
+  font-size: 3rem;
+}
+.projectsPage .projectsBanner .content .description {
+  padding: 1rem;
+}
+.projectsPage .projectsBanner i {
+  margin: 1rem auto auto 1rem;
+  font-size: 3rem;
+}
+.projectsPage .projectCard {
+  width: calc(100% - 2rem);
+  max-width: 70rem;
+  margin: auto;
+  padding: 4rem 0;
+  border-bottom: 2px solid #fff;
+}
+.projectsPage .projectCard:last-child {
+  border-bottom: 0px solid #fff;
+}
+.projectsPage .projectCard .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.projectsPage .projectCard .content .picture {
+  position: relative;
+  padding: 0;
+  width: 30rem;
+  border: 1px solid #787878 !important;
+}
+.projectsPage .projectCard .content .picture div {
+  position: relative !important;
+}
+.projectsPage .projectCard .content .picture img {
+  position: relative !important;
+  width: 100% !important;
+  height: calc(9 / 16 * 100%) !important;
+  object-fit: cover;
+  object-position: top;
+  max-width: 30rem !important;
+  display: block;
+  max-height: calc(9 / 16 * 28rem) !important;
+  margin: auto;
+}
+@media (max-width: 992px) {
+  .projectsPage .projectCard .content .picture {
+    width: 20rem;
+  }
+}
+@media (max-width: 769px) {
+  .projectsPage .projectCard .content .picture {
+    width: 100%;
+  }
+}
+.projectsPage .projectCard .content .picture.opened {
+  width: 100%;
+  max-height: calc(9 / 16 * 50rem);
+  overflow: auto;
+}
+.projectsPage .projectCard .content .picture.opened img {
+  max-height: unset !important;
+  max-width: unset !important;
+}
+.projectsPage .projectCard .content .text {
+  position: relative;
+  padding: 1rem;
+  width: calc(100% - 30rem);
+}
+@media (max-width: 992px) {
+  .projectsPage .projectCard .content .text {
+    width: calc(100% - 20rem);
+  }
+}
+@media (max-width: 769px) {
+  .projectsPage .projectCard .content .text {
+    width: 100%;
+  }
+}
+.projectsPage .projectCard .content .text .technologies {
+  color: #787878;
+}
+.projectsPage .projectCard .content .text .buttons {
+  padding: 2rem 0 0;
+}
+.projectsPage .projectCard .content .text .buttons button {
+  position: relative;
+  font-size: 1rem;
+  padding-bottom: 0.1rem;
+}
+.projectsPage .projectCard .content .text .buttons button:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+}
+.projectsPage .projectCard .content .text .buttons button:hover:after {
+  width: 100%;
+}
+
+/*#endregion */
+/*#region Contact Page */
+.contactPage {
+  max-width: 70rem;
+  padding: 1rem;
+  margin: auto;
+}
+.contactPage .contactText {
+  padding: 4rem 0;
+}
+.contactPage .contactText p {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+.contactPage .contactText h1 {
+  font-size: 9rem;
+  font-weight: bold;
+}
+.contactPage .contactSocial .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contactPage .contactSocial .mail {
+  width: calc(100% - 15rem);
+}
+.contactPage .contactSocial .mail a {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.contactPage .contactSocial .others {
+  width: 13rem;
+}
+.contactPage .contactSocial .others ul {
+  max-width: 15rem;
+  margin: auto;
+  padding: 1rem 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contactPage .contactSocial .others ul li {
+  padding: 1rem 0.5rem;
+}
+.contactPage .contactSocial .others ul li img {
+  width: 100%;
+  display: block;
+  margin: auto;
+  max-width: 4rem;
+  object-fit: contain;
+}
+.contactPage .contactSocial .others ul li a:hover img {
+  transform: scale(1.2);
+}
+
+/*#endregion */
+/*#region 404 Page */
+.custom404 {
+  position: relative;
+  min-height: calc(100vh - 10rem);
+}
+.custom404 .text {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.custom404 h1 {
+  font-size: 10rem;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  background-image: url("../../public/assets/images/textBackground.jpeg");
+  background-size: cover;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 580px) {
+  .custom404 h1 {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 580px) {
+  .custom404 h4 {
+    font-size: 1rem;
+  }
+}
+
+/*#endregion */
+
+/*# sourceMappingURL=styles.css.map */
