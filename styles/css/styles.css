@@ -252,6 +252,15 @@ section.homePage .homeSocial ul {
 section.homePage .homeSocial ul li {
   padding: 1rem 0.5rem;
 }
+section.homePage .homeSocial ul li a {
+  display: block;
+  position: relative;
+}
+section.homePage .homeSocial ul li a * {
+  position: relative !important;
+  width: auto !important;
+  height: auto !important;
+}
 section.homePage .homeSocial ul li span {
   display: none;
 }
@@ -440,6 +449,15 @@ section.homePage .homeSocial ul li a:hover img {
 }
 .contactPage .contactSocial .others ul li {
   padding: 1rem 0.5rem;
+}
+.contactPage .contactSocial .others ul li a {
+  display: block;
+  position: relative;
+}
+.contactPage .contactSocial .others ul li a * {
+  position: relative !important;
+  width: auto !important;
+  height: auto !important;
 }
 .contactPage .contactSocial .others ul li img {
   width: 100%;

@@ -1,3 +1,5 @@
+import Image from "next/dist/client/image";
+
 export default function ContactSocial() {
   return (
     <div className="contactSocial">
@@ -7,28 +9,46 @@ export default function ContactSocial() {
           <a href="mailto:esm.taha@gamil.com">ESM.TAHA@GMAIL.COM</a>
         </div>
         <div className="others">
-            <h4>
-                CONTACT
-            </h4>
+          <h4>CONTACT</h4>
           <ul>
             <li>
               <a herf="https://www.instagram.com/taha.esmattalab/">
-                <img src="../assets/images/instagram.png" />
+                <span> Instagram </span>
+                <Image
+                  layout="fill"
+                  src="/../public/assets/images/instagram.png"
+                  alt="Instagram"
+                />
               </a>
             </li>
             <li>
               <a herf="https://dribbble.com/toxic-taha">
-                <img src="../assets/images/dribble.png" />
+                <span> Dribble </span>
+                <Image
+                  layout="fill"
+                  src="/../public/assets/images/dribble.png"
+                  alt="Dribble"
+                />
               </a>
             </li>
             <li>
               <a herf="https://www.behance.net/tahaesm">
-                <img src="../assets/images/behance.png" />
+                <span> Behance </span>
+                <Image
+                  layout="fill"
+                  src="/../public/assets/images/behance.png"
+                  alt="Behance"
+                />
               </a>
             </li>
             <li>
               <a herf="https://www.linkedin.com/in/taha-esm-34a09a21b/">
-                <img src="../assets/images/linkedin.png" />
+                <span>LinkedIn </span>
+                <Image
+                  layout="fill"
+                  src="/../public/assets/images/linkedin.png"
+                  alt="LinkedIn"
+                />
               </a>
             </li>
           </ul>

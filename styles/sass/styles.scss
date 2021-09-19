@@ -228,6 +228,15 @@ section.homePage {
                 display: block;
             }
             li {
+                a {
+                    display: block;
+                    position: relative;
+                    * {
+                        position: relative !important;
+                        width: auto !important;
+                        height: auto !important;
+                    }
+                }
                 padding: 1rem 0.5rem;
                 span {
                     display: none;
@@ -416,6 +425,7 @@ section.homePage {
         }
         .others {
             width: 13rem;
+            
             ul {
                 max-width: 15rem;
                 margin: auto;
@@ -424,6 +434,15 @@ section.homePage {
                 justify-content: space-between;
                 align-items: center;
                 li {
+                    a {
+                        display: block;
+                        position: relative;
+                        * {
+                            position: relative !important;
+                            width: auto !important;
+                            height: auto !important;
+                        }
+                    }
                     padding: 1rem 0.5rem;
     
                     img {
