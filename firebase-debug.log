@@ -1,14 +1,14 @@
-[debug] [2021-09-19T11:01:48.126Z] ----------------------------------------------------------------------
-[debug] [2021-09-19T11:01:48.130Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\alire\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2021-09-19T11:01:48.131Z] CLI Version:   9.18.0
-[debug] [2021-09-19T11:01:48.131Z] Platform:      win32
-[debug] [2021-09-19T11:01:48.131Z] Node Version:  v14.17.3
-[debug] [2021-09-19T11:01:48.132Z] Time:          Sun Sep 19 2021 15:31:48 GMT+0430 (Iran Daylight Time)
-[debug] [2021-09-19T11:01:48.133Z] ----------------------------------------------------------------------
+[debug] [2021-09-19T12:00:14.247Z] ----------------------------------------------------------------------
+[debug] [2021-09-19T12:00:14.249Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\alire\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-09-19T12:00:14.250Z] CLI Version:   9.18.0
+[debug] [2021-09-19T12:00:14.250Z] Platform:      win32
+[debug] [2021-09-19T12:00:14.250Z] Node Version:  v14.17.3
+[debug] [2021-09-19T12:00:14.250Z] Time:          Sun Sep 19 2021 16:30:14 GMT+0430 (Iran Daylight Time)
+[debug] [2021-09-19T12:00:14.250Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2021-09-19T11:01:48.137Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
-[debug] [2021-09-19T11:01:48.166Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2021-09-19T11:01:48.166Z] > authorizing via signed-in user (alirezahodaee14@gmail.com)
+[debug] [2021-09-19T12:00:14.253Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-09-19T12:00:14.281Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-09-19T12:00:14.281Z] > authorizing via signed-in user (alirezahodaee14@gmail.com)
 [info] 
      ######## #### ########  ######## ########     ###     ######  ########
      ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
@@ -27,15 +27,24 @@ You're about to initialize a Firebase project in this directory:
 [info] You can create multiple project aliases by running firebase use --add, 
 [info] but for now we'll just set up a default project.
 [info] 
-[debug] [2021-09-19T11:02:52.574Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
-[debug] [2021-09-19T11:02:53.776Z] Failed to make request: invalid json response body at https://firebase.googleapis.com/v1beta1/projects?pageSize=100 reason: Unexpected token < in JSON at position 0
-[debug] [2021-09-19T11:02:54.509Z] FirebaseError: Failed to make request: invalid json response body at https://firebase.googleapis.com/v1beta1/projects?pageSize=100 reason: Unexpected token < in JSON at position 0
-    at Client.request (C:\Users\alire\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:109:19)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async getProjectPage (C:\Users\alire\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:233:17)
-    at async getFirebaseProjectPage (C:\Users\alire\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:250:23)
-    at async selectProjectInteractively (C:\Users\alire\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:95:41)
-    at async Object.doSetup [as project] (C:\Users\alire\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:87:27)
-    at async init (C:\Users\alire\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2021-09-19T12:00:35.649Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+ {"projectId":"taha-esmt","name":"taha-esmt"}
+[debug] [2021-09-19T12:01:10.085Z] FirebaseError: Server Error. ESOCKETTIMEDOUT
+    at Request._callback (C:\Users\alire\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:32:31)
+    at self.callback (C:\Users\alire\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:375:28)
+    at Request.emit (domain.js:470:12)
+    at ClientRequest.<anonymous> (C:\Users\alire\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:819:16)
+    at Object.onceWrapper (events.js:481:28)
+    at ClientRequest.emit (events.js:375:28)
+    at ClientRequest.emit (domain.js:470:12)
+    at TLSSocket.emitRequestTimeout (_http_client.js:790:9)
+    at Object.onceWrapper (events.js:481:28)
+    at TLSSocket.emit (events.js:387:35)
+    at TLSSocket.emit (domain.js:470:12)
+    at TLSSocket.Socket._onTimeout (net.js:484:8)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)
 [error] 
-[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[error] Error: Failed to create project. See firebase-debug.log for more info.
