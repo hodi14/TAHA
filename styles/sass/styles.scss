@@ -425,7 +425,15 @@ section.homePage {
         }
         .others {
             width: 13rem;
-            
+            a {
+                display: block;
+                position: relative;
+                * {
+                    position: relative !important;
+                    width: auto !important;
+                    height: auto !important;
+                }
+            }
             ul {
                 max-width: 15rem;
                 margin: auto;
@@ -434,23 +442,16 @@ section.homePage {
                 justify-content: space-between;
                 align-items: center;
                 li {
-                    a {
-                        display: block;
-                        position: relative;
-                        * {
-                            position: relative !important;
-                            width: auto !important;
-                            height: auto !important;
-                        }
-                    }
+                    
                     padding: 1rem 0.5rem;
     
                     img {
-                        width: 100%;
-                        display: block;
-                        margin: auto;
-                        max-width: 4rem;
-                        object-fit: contain;
+                        width: 100% !important;
+    display: block !important;
+    margin: auto !important;
+    max-width: 4rem;
+    object-fit: contain;
+    min-width: 1.5rem !important;
                     }
                     a:hover img {
                         transform: scale(1.2);

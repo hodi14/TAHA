@@ -13,7 +13,6 @@ export default function ContactSocial() {
           <ul>
             <li>
               <a herf="https://www.instagram.com/taha.esmattalab/">
-                <span> Instagram </span>
                 <Image
                   layout="fill"
                   src="/../public/assets/images/instagram.png"
@@ -23,7 +22,6 @@ export default function ContactSocial() {
             </li>
             <li>
               <a herf="https://dribbble.com/toxic-taha">
-                <span> Dribble </span>
                 <Image
                   layout="fill"
                   src="/../public/assets/images/dribble.png"
@@ -33,7 +31,6 @@ export default function ContactSocial() {
             </li>
             <li>
               <a herf="https://www.behance.net/tahaesm">
-                <span> Behance </span>
                 <Image
                   layout="fill"
                   src="/../public/assets/images/behance.png"
@@ -43,7 +40,6 @@ export default function ContactSocial() {
             </li>
             <li>
               <a herf="https://www.linkedin.com/in/taha-esm-34a09a21b/">
-                <span>LinkedIn </span>
                 <Image
                   layout="fill"
                   src="/../public/assets/images/linkedin.png"
