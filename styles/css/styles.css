@@ -38,10 +38,12 @@ a {
   text-decoration: none;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
 }
-input :focus, textarea :focus {
+input :focus,
+textarea :focus {
   outline: none;
 }
 
@@ -147,34 +149,40 @@ section.homePage .homeBanner .name {
     width: 100%;
   }
 }
-section.homePage .homeBanner .name h1, section.homePage .homeBanner .name input {
+section.homePage .homeBanner .name h1,
+section.homePage .homeBanner .name input {
   background-color: #000;
   border: none;
   font-size: 8rem;
   font-weight: bold;
 }
 @media (max-width: 1180px) {
-  section.homePage .homeBanner .name h1, section.homePage .homeBanner .name input {
+  section.homePage .homeBanner .name h1,
+section.homePage .homeBanner .name input {
     font-size: 6.5rem;
   }
 }
 @media (max-width: 992px) {
-  section.homePage .homeBanner .name h1, section.homePage .homeBanner .name input {
+  section.homePage .homeBanner .name h1,
+section.homePage .homeBanner .name input {
     font-size: 6rem;
   }
 }
 @media (max-width: 769px) {
-  section.homePage .homeBanner .name h1, section.homePage .homeBanner .name input {
+  section.homePage .homeBanner .name h1,
+section.homePage .homeBanner .name input {
     font-size: 5rem;
   }
 }
 @media (max-width: 580px) {
-  section.homePage .homeBanner .name h1, section.homePage .homeBanner .name input {
+  section.homePage .homeBanner .name h1,
+section.homePage .homeBanner .name input {
     font-size: 3.5rem;
   }
 }
 @media (max-width: 400px) {
-  section.homePage .homeBanner .name h1, section.homePage .homeBanner .name input {
+  section.homePage .homeBanner .name h1,
+section.homePage .homeBanner .name input {
     font-size: 2.5rem;
   }
 }
@@ -255,6 +263,9 @@ section.homePage .homeSocial ul li {
 section.homePage .homeSocial ul li a {
   display: block;
   position: relative;
+}
+section.homePage .homeSocial ul li a > div {
+  padding: 0.5rem;
 }
 section.homePage .homeSocial ul li a * {
   position: relative !important;
@@ -442,6 +453,9 @@ section.homePage .homeSocial ul li a:hover img {
 .contactPage .contactSocial .others a {
   display: block;
   position: relative;
+}
+.contactPage .contactSocial .others a > div {
+  padding: 0.5rem;
 }
 .contactPage .contactSocial .others a * {
   position: relative !important;

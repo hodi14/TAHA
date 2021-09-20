@@ -26,14 +26,11 @@ export default function HomeBanner() {
             setName({'name': name, 'index': name.index, 'pointer': name.name.length, 'typing': false});
             let tmp = names[name.index];
             let tmpSub = tmp.substr(0, name.pointer);
-            console.log(tmp + " (B) " + tmpSub + " -> " + name.pointer);
             setName({'name': tmpSub, 'index': name.index, 'pointer': name.pointer-1, 'typing': false});
             if (name.pointer < 0)
                 setName({'name': name.name, 'index': ((name.index+1) % names.length), 'pointer': 1, 'typing': true});
         }
         if(name.typing) {
-            console.log(name.pointer);
-
             setName({'name': name.name, 'index': name.index, 'pointer': name.pointer, 'typing': true});
             let tmp = names[(name.index) % names.length];
             let tmpSub = tmp.substr(0, name.pointer);

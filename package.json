@@ -6,10 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
     "mdbreact": "^5.1.0",
