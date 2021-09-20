@@ -1,4 +1,6 @@
 module.exports = {
   reactStrictMode: true,
-  distDir: 'build'
+  distDir: 'build',
+  basePath: ''
+
 }
