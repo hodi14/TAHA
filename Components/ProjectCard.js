@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Image from 'next/image'
+import Image from 'next/image';
 
 export default function ProjectCard(props) {
-  const imgPath = "/../public/assets/images/projects/" + props.imgPath;
+  const imgPath = props.imgPath;
   const name = props.name;
   const id = props.id;
   const description = props.description;
