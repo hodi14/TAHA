@@ -294,7 +294,7 @@ section.homePage .homeSocial ul li a:hover img {
     color: #fff;
   }
   section.homePage .homeSocial ul li img {
-    display: none;
+    display: none !important;
   }
 }
 
