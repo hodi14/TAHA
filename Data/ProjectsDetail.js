@@ -13,7 +13,7 @@ export default [
     description:
       "Rebranding & change the website for moreuser friendly and having better user interface",
     technologies: "App that used : Figma, Adobe Ps, Adobe Ai",
-    imgPath: "yasmineGold.jpg",
+    imgPath: "/../public/assets/images/projects/yasmineGold.jpg",
   },
   {
     name: "Faramouj",
@@ -21,7 +21,7 @@ export default [
     description:
       "Rebranding & change the website for moreuser friendly and having better user interface",
     technologies: "App that used : Figma, Adobe Ps, Adobe Ai",
-    imgPath: "faramouj.jpg",
+    imgPath: "/../public/assets/images/projects/faramouj.jpg",
   },
   {
     name: "HERA",
@@ -29,7 +29,7 @@ export default [
     description:
       "Rebranding & change the website for moreuser friendly and having better user interface",
     technologies: "App that used : Figma, Adobe Ps, Adobe Ai",
-    imgPath: "hera.jpg",
+    imgPath: "/../public/assets/images/projects/hera.jpg",
   },
   {
     name: "MAMMUT Containers",
@@ -37,6 +37,6 @@ export default [
     description:
       "Rebranding & change the website for moreuser friendly and having better user interface",
     technologies: "App that used : Figma, Adobe Ps, Adobe Ai",
-    imgPath: "mammutContainers.jpg",
+    imgPath: "/../public/assets/images/projects/mammutContainers.jpg",
   },
 ];
