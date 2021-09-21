@@ -4,7 +4,7 @@ exports.id = 888;
 exports.ids = [888];
 exports.modules = {
 
-/***/ 518:
+/***/ 967:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -17,21 +17,20 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 // EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__(297);
-;// CONCATENATED MODULE: external "next/head"
-const head_namespaceObject = require("next/head");
-var head_default = /*#__PURE__*/__webpack_require__.n(head_namespaceObject);
-// EXTERNAL MODULE: ./node_modules/next/link.js
-var next_link = __webpack_require__(664);
-;// CONCATENATED MODULE: external "next/script"
-const script_namespaceObject = require("next/script");
-var script_default = /*#__PURE__*/__webpack_require__.n(script_namespaceObject);
-// EXTERNAL MODULE: ./node_modules/next/image.js
-var next_image = __webpack_require__(675);
+var external_react_ = __webpack_require__(9297);
+// EXTERNAL MODULE: ../../../AppData/Roaming/npm/node_modules/next/head.js
+var head = __webpack_require__(5030);
+var head_default = /*#__PURE__*/__webpack_require__.n(head);
+// EXTERNAL MODULE: ../../../AppData/Roaming/npm/node_modules/next/link.js
+var next_link = __webpack_require__(11);
+// EXTERNAL MODULE: ../../../AppData/Roaming/npm/node_modules/next/script.js
+var script = __webpack_require__(7339);
+// EXTERNAL MODULE: ../../../AppData/Roaming/npm/node_modules/next/image.js
+var next_image = __webpack_require__(5095);
 ;// CONCATENATED MODULE: ./public/assets/images/logo.png
 /* harmony default export */ const logo = ({"src":"/_next/static/image/public/assets/images/logo.a7a89e4456a74966bb29be1da66479fb.png","height":30,"width":37,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAGCAQAAABUDBdwAAAAW0lEQVR42jXKoQ3CUABF0YcAgcIgmIYgITiCxsACzEBCEGg0y3SFprJjtOL8Nmma605uLLUuMhcvxdnD22KCr+LkaWSxirXeUXRu07HF30ZxdXBP4qO209j7qQafW0CBm+AwqQAAAABJRU5ErkJggg=="});
 // EXTERNAL MODULE: external "react/jsx-runtime"
-var jsx_runtime_ = __webpack_require__(282);
+var jsx_runtime_ = __webpack_require__(5282);
 ;// CONCATENATED MODULE: ./Components/Header.js
 
 
@@ -81,12 +80,12 @@ function Header() {
           })
         })]
       })
-    }), /*#__PURE__*/jsx_runtime_.jsx((script_default()), {
+    }), /*#__PURE__*/jsx_runtime_.jsx(script.default, {
       src: "/assets/js/header.js"
     })]
   });
 }
-;// CONCATENATED MODULE: ./Components/layout.js
+;// CONCATENATED MODULE: ./Components/Layout.js
 
 
 
@@ -123,18 +122,6 @@ function MyApp({
   Component,
   pageProps
 }) {
-  const {
-    0: isLoaded,
-    1: setLoad
-  } = (0,external_react_.useState)(false);
-
-  if (!isLoaded) {
-    console.log("loading...");
-  }
-
-  (0,external_react_.useEffect)(() => {
-    setLoad(true);
-  }, []);
   return /*#__PURE__*/jsx_runtime_.jsx(Layout, {
     children: /*#__PURE__*/jsx_runtime_.jsx(Component, _objectSpread({}, pageProps))
   });
@@ -142,7 +129,7 @@ function MyApp({
 
 /***/ }),
 
-/***/ 325:
+/***/ 9325:
 /***/ ((module) => {
 
 "use strict";
@@ -158,7 +145,15 @@ module.exports = require("next/dist/server/image-config.js");
 
 /***/ }),
 
-/***/ 695:
+/***/ 6098:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/head-manager-context.js");
+
+/***/ }),
+
+/***/ 6695:
 /***/ ((module) => {
 
 "use strict";
@@ -166,7 +161,7 @@ module.exports = require("next/dist/shared/lib/head.js");
 
 /***/ }),
 
-/***/ 378:
+/***/ 5378:
 /***/ ((module) => {
 
 "use strict";
@@ -174,7 +169,7 @@ module.exports = require("next/dist/shared/lib/i18n/normalize-locale-path.js");
 
 /***/ }),
 
-/***/ 162:
+/***/ 7162:
 /***/ ((module) => {
 
 "use strict";
@@ -182,7 +177,7 @@ module.exports = require("next/dist/shared/lib/mitt.js");
 
 /***/ }),
 
-/***/ 773:
+/***/ 8773:
 /***/ ((module) => {
 
 "use strict";
@@ -190,7 +185,7 @@ module.exports = require("next/dist/shared/lib/router-context.js");
 
 /***/ }),
 
-/***/ 248:
+/***/ 2248:
 /***/ ((module) => {
 
 "use strict";
@@ -198,7 +193,7 @@ module.exports = require("next/dist/shared/lib/router/utils/get-asset-path-from-
 
 /***/ }),
 
-/***/ 372:
+/***/ 9372:
 /***/ ((module) => {
 
 "use strict";
@@ -214,7 +209,7 @@ module.exports = require("next/dist/shared/lib/router/utils/parse-relative-url.j
 
 /***/ }),
 
-/***/ 747:
+/***/ 2747:
 /***/ ((module) => {
 
 "use strict";
@@ -230,7 +225,7 @@ module.exports = require("next/dist/shared/lib/router/utils/route-matcher.js");
 
 /***/ }),
 
-/***/ 456:
+/***/ 3456:
 /***/ ((module) => {
 
 "use strict";
@@ -246,7 +241,7 @@ module.exports = require("next/dist/shared/lib/to-base-64.js");
 
 /***/ }),
 
-/***/ 620:
+/***/ 7620:
 /***/ ((module) => {
 
 "use strict";
@@ -254,7 +249,7 @@ module.exports = require("next/dist/shared/lib/utils.js");
 
 /***/ }),
 
-/***/ 297:
+/***/ 9297:
 /***/ ((module) => {
 
 "use strict";
@@ -262,7 +257,7 @@ module.exports = require("react");
 
 /***/ }),
 
-/***/ 282:
+/***/ 5282:
 /***/ ((module) => {
 
 "use strict";
@@ -270,7 +265,7 @@ module.exports = require("react/jsx-runtime");
 
 /***/ }),
 
-/***/ 431:
+/***/ 3400:
 /***/ (() => {
 
 /* (ignored) */
@@ -284,7 +279,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [917,61], () => (__webpack_exec__(518)));
+var __webpack_exports__ = __webpack_require__.X(0, [919,901,400], () => (__webpack_exec__(967)));
 module.exports = __webpack_exports__;
 
 })();

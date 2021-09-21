@@ -6,13 +6,6 @@ import { useEffect, useState } from 'react';
 import Layout from '../Components/Layout';
 
 export default function MyApp({ Component, pageProps }) {
-  const [isLoaded, setLoad] = useState(false);
-  if (!isLoaded) {
-    console.log("loading...");
-  }
-  useEffect(() => {
-    setLoad(true);
-  }, []);
 
   return (
     <Layout>

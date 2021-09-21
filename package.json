@@ -5,8 +5,7 @@
   "homepage": "https://hodi14.github.io/TAHA",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "NODE_ENV=production node server.js"
+    "build": "next build && next export"
   },
   "dependencies": {
     "mdbreact": "^5.1.0",
