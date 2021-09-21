@@ -1,15 +1,16 @@
 import { useState } from "react";
 import Image from 'next/image';
+import imagePaths from '../Data/ProjectImages';
+import pr1 from "../public/assets/images/projects/samCafe.jpg";
 
-export default function ProjectCard(props) {
-  const imgPath = props.imgPath;
+const PorjectCard = (props) => {
+  const index = props.index;
+  const path = imagePaths[index-1];
   const name = props.name;
   const id = props.id;
   const description = props.description;
   const technologies = props.technologies;
-
   const [isOpened, setOpen] = useState({'class': 'picture', 'text': 'View Full Sketch', 'arrow': 'fal fa-arrow-right'});
-
   const openPicture = () => {
     if (isOpened.class == "picture") setOpen({'class': "picture opened", 'text': 'Exit Full Sketch', 'arrow': 'fal fa-arrow-left'});
     else setOpen({'class': 'picture', 'text': 'View Full Sketch', 'arrow': 'fal fa-arrow-right'});
@@ -32,9 +33,11 @@ export default function ProjectCard(props) {
           </div>
         </div>
         <div className={isOpened.class}>
-          <Image src={imgPath} layout='fill' objectFit="cover" alt={name}/>
+          <Image src={path} layout='fill' objectFit="cover" alt={name}/>
         </div>
       </div>
     </div>
   );
 }
+
+export default PorjectCard;

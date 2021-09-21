@@ -9,7 +9,7 @@ export default function Projects() {
             <div className="projectsList">
                 {projects.map((project) => {
                     return (
-                        <ProjectCard name={project.name} id={project.id} description={project.description} imgPath={project.imgPath} technologies={project.technologies} key={project.id}/>
+                        <ProjectCard name={project.name} id={project.id} description={project.description} imgPath={project.imgPath} technologies={project.technologies} key={project.id} index={project.index}/>
                     )
                 })}
             </div>
