@@ -4,7 +4,7 @@ exports.id = 888;
 exports.ids = [888];
 exports.modules = {
 
-/***/ 234:
+/***/ 518:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -16,6 +16,8 @@ __webpack_require__.d(__webpack_exports__, {
   "default": () => (/* binding */ MyApp)
 });
 
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__(297);
 ;// CONCATENATED MODULE: external "next/head"
 const head_namespaceObject = require("next/head");
 var head_default = /*#__PURE__*/__webpack_require__.n(head_namespaceObject);
@@ -84,7 +86,7 @@ function Header() {
     })]
   });
 }
-;// CONCATENATED MODULE: ./Components/Layout.js
+;// CONCATENATED MODULE: ./Components/layout.js
 
 
 
@@ -103,8 +105,6 @@ function Layout({
     })]
   });
 }
-// EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__(297);
 ;// CONCATENATED MODULE: ./pages/_app.js
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
 
@@ -284,7 +284,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [917,61], () => (__webpack_exec__(234)));
+var __webpack_exports__ = __webpack_require__.X(0, [917,61], () => (__webpack_exec__(518)));
 module.exports = __webpack_exports__;
 
 })();
