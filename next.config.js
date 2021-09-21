@@ -1,4 +1,7 @@
 module.exports = {
   reactStrictMode: true,
-  basePath: ''
+  basePath: '',
+  resolve: {
+    extensions: ['', '.js', '.jsx']
+  } 
 }
