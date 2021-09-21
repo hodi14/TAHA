@@ -1,4 +1,8 @@
 import Image from "next/dist/client/image";
+import intsaPath from "../public/assets/images/instagram.png";
+import dribblePath from "../public/assets/images/dribble.png";
+import behancePath from "../public/assets/images/behance.png";
+import linkedinPath from "../public/assets/images/linkedin.png";
 
 export default function ContactSocial() {
   return (
@@ -15,7 +19,7 @@ export default function ContactSocial() {
               <a herf="https://www.instagram.com/taha.esmattalab/">
                 <Image
                   layout="fill"
-                  src="/../public/assets/images/instagram.png"
+                  src={intsaPath}
                   alt="Instagram"
                 />
               </a>
@@ -24,7 +28,7 @@ export default function ContactSocial() {
               <a herf="https://dribbble.com/toxic-taha">
                 <Image
                   layout="fill"
-                  src="/../public/assets/images/dribble.png"
+                  src={dribblePath}
                   alt="Dribble"
                 />
               </a>
@@ -33,7 +37,7 @@ export default function ContactSocial() {
               <a herf="https://www.behance.net/tahaesm">
                 <Image
                   layout="fill"
-                  src="/../public/assets/images/behance.png"
+                  src={behancePath}
                   alt="Behance"
                 />
               </a>
@@ -42,7 +46,7 @@ export default function ContactSocial() {
               <a herf="https://www.linkedin.com/in/taha-esm-34a09a21b/">
                 <Image
                   layout="fill"
-                  src="/../public/assets/images/linkedin.png"
+                  src={linkedinPath}
                   alt="LinkedIn"
                 />
               </a>
